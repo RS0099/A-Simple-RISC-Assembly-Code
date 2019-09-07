@@ -1,0 +1,14 @@
+The code is derived from the cpp code-
+
+	int num= 1;
+	while (true)
+	{
+	int int_count = 0;
+	for (int i = 1; i <= pow(num, 1.0/3); i++)
+		for (int j = i + 1; j <= pow(num, 1.0/3); j++)
+			if (i*i*i + j*j*j == num)
+				int_count++;
+
+		if (int_count == 2){ cout <<num<< endl; break;}
+               num++;
+	}
